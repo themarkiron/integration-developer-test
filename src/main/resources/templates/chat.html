@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>Title</title>
+</head>
+<body>
+
+<form method="POST" action="/message-bots" enctype="multipart/form-data">
+        <textarea id="bots"  itemtype="bots" name="bots" placeholder="sent message" rows="10" cols="30"> </textarea>
+    </br>
+    <input type="submit" value="Send Message Bots" />
+        <input type="text"  id="to" hidden name="to" value="16edd3b3-3f75-40df-af07-2a3813a79ce9">
+
+</form>
+
+</br>
+</br>
+</br>
+
+<form method="POST" action="/message-anonymous" enctype="multipart/form-data" >
+    <div class="btn btn-primary">
+
+        <textarea name="anonymous" id="anonymous" itemtype="anonymous"
+                  placeholder="sent message"  rows="10" cols="30"> </textarea>
+    </div>
+    </br>
+
+
+    <input type="submit" value="Send Message Anonymomus" />
+    <input type="text"  hidden name="to2" id="to2" value="36b9f842-ee97-11e8-9443-0242ac120002">
+
+</form>
+</br>
+
+
+</body>
+</html>
